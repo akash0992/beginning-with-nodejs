@@ -1,0 +1,13 @@
+{
+  "name": "socket.io-chat",
+  "version": "0.0.0",
+  "description": "A simple chat client using socket.io",
+  "main": "index.js",
+  "author": "Grant Timmerman",
+  "private": true,
+  "license": "BSD",
+  "dependencies": {
+    "express": "file:../offline_node_modules/express@3.4.8.tar.tgz",
+    "socket.io": "file:../offline_node_modules/socket.io-1.2.1.tar.tgz"
+  }
+}

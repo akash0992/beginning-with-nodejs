@@ -18,7 +18,7 @@ server.listen(port, function () {
 });
 
 // serve static content from public place...
-app.use(express.static(__dirname + '/public'));
+app.use(express.static('../public'));
 
 
 var io = socketIo(server);
@@ -28,6 +28,7 @@ io.on('connection', function (socket) {
         console.log('message: ' + msg);
         socket.emit('chat message', msg)
     });
+    console.log('connection started');
 });
 
 console.log('something going to happen...');

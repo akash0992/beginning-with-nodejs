@@ -14,6 +14,7 @@ server.listen(port, function () {
 
 // serve static content from public place...
 app.use(express.static(__dirname + '/public'));
+
 //place for io settings...
 
 console.log('something going to happen...');

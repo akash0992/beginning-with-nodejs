@@ -15,8 +15,8 @@ var server = http.createServer(function (req, res) {
     //serve index.html page
     else if (pathname == '/') {
         res.writeHead(200, {"Content-Type": "text/html"});
-        fs.readFile('index.html', function (err, html) {
-            res.write(html)
+        fs.readFile('../index.html', function (err, html) {
+            res.write(html);
             res.end();
         })
 

@@ -16,7 +16,7 @@ var server = http.createServer(function (req, res) {
     else if (pathname == '/') {
         res.writeHead(200, {"Content-Type": "text/html"});
         fs.readFile('index.html', function (err, html) {
-            res.write(html)
+            res.write(html);
             res.end();
         })
 
@@ -25,7 +25,7 @@ var server = http.createServer(function (req, res) {
     else if (pathname == '/cat.jpg') {
         res.writeHead(200, {"Content-Type": "application/image"});
         fs.readFile('cat.jpg', function (err, image) {
-            res.write(image)
+            res.write(image);
             res.end();
         })
 
